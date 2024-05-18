@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="91cab6bb49184a59a474d28de96ecb17" Name="Diagram1">
+        <EntityTypeShape EntityType="DBModel.Attendance" Width="1.5" PointX="5.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Departments" Width="1.5" PointX="0.75" PointY="6.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.LeaveRequests" Width="1.5" PointX="8.25" PointY="6" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Position" Width="1.5" PointX="0.75" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Role" Width="1.5" PointX="3" PointY="2.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Shifts" Width="1.5" PointX="3" PointY="10" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.Staff" Width="1.5" PointX="3" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.StatusAttendance" Width="1.5" PointX="3" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.StatusRequests" Width="1.5" PointX="6" PointY="9.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.sysdiagrams" Width="1.5" PointX="7.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.TimeLogs" Width="1.5" PointX="5.25" PointY="12.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="DBModel.User" Width="1.5" PointX="5.25" PointY="2" IsExpanded="true" />
+        <AssociationConnector Association="DBModel.FK_Attendance_Shifts" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Attendance_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Attendance_StatusAttendance" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Staff_Departments" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_LeaveRequests_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_LeaveRequests_StatusRequests" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_Staff_Position" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_User_Role" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_TimeLogs_Staff" ManuallyRouted="false" />
+        <AssociationConnector Association="DBModel.FK_User_Staff" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

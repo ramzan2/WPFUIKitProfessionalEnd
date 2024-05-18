@@ -1,0 +1,125 @@
+﻿<Window x:Class="WPFUIKitProfessional.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFUIKitProfessional"
+        mc:Ignorable="d" x:Name="home" 
+        Title="MainWindow" Height="560" Width="1100"
+        WindowStartupLocation="CenterScreen" WindowStyle="None"
+        Background="Transparent" AllowsTransparency="True"
+        ResizeMode="NoResize" WindowState="Normal" FontFamily="Poppins">
+
+
+    <Border CornerRadius="10" Background="{DynamicResource PrimaryBackgroundColor}">
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="250"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <!-- Start: GridColumn Left -->
+            <Border CornerRadius="10 0 0 10"
+                    Padding="10" 
+                    Grid.Column="0"
+                    Margin="0,0,836,0" 
+                    Grid.ColumnSpan="2" Background="#2994B2">
+                <Grid x:Name="gridMenu">
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="130"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <!-- Logo -->
+                        <Image Source="/Assets/Icons/Group 35.png" Stretch="Fill" Height="120" Width="112" VerticalAlignment="Center" Margin="10 0 0 0"/>
+ 
+
+                    <Separator Background="{DynamicResource TertiaryBackgroundColor}" Margin="0,65,0,289" Grid.RowSpan="2"/>
+
+                    <StackPanel Grid.Row="1"
+                                Margin="0 40 0 0">
+                        <Button x:Name="rdUsers" Style="{DynamicResource  BtnStyle}" 
+                                     Click="rdUsers_Click"
+                                     >
+
+                            <Grid>
+                                <Image Source="/Assets/Icons/посещаемость.png"
+                                       Style="{DynamicResource Image_Style}"  Width="30"/>
+                                <TextBlock Text="Посещаемость"
+                                           Style="{DynamicResource Text_Style}" />
+                            </Grid>
+                        </Button>
+                        <Button x:Name="rdAnalytics" Style="{DynamicResource BtnStyle}" Click="rdAnalytics_Click">
+                            <Grid>
+                                <Image Source="/Assets/Icons/комбинированный.png"
+                                       Style="{DynamicResource Image_Style}"  Width="30"/>
+                                <TextBlock Text="График смены"
+                                           Style="{DynamicResource Text_Style}" />
+                            </Grid>
+
+                        </Button>
+                        <Button x:Name="rdMessages" Style="{DynamicResource BtnStyle}"  Click="rdMessages_Click">
+                            <Grid>
+                                <Image Source="/Assets/Icons/запрос.png"
+                                       Style="{DynamicResource Image_Style}"  Width="30"/>
+                                <TextBlock Text="Запросы на отпускные"
+                                           Style="{DynamicResource Text_Style}" />
+                            </Grid>
+                        </Button>
+                        <Button x:Name="AddBtn" Style="{DynamicResource BtnStyle}"  Click="AddBtn_Click" >
+                            <Grid>
+                                <Image Source="/Assets/Icons/добавление.png"
+                                       Style="{DynamicResource Image_Style}"  Width="30"/>
+                                <TextBlock Text="Добавление запроса"
+                                           Style="{DynamicResource Text_Style}" />
+                            </Grid>
+                        </Button>
+
+
+                        <Separator Margin="20 20" Background="{DynamicResource TertiaryBackgroundColor}"/>
+
+                        <Button x:Name="ExitBtn" Style="{DynamicResource BtnStyle}" Margin="0 90 0 1"
+                                     Click="ExitBtn_Click">
+                            <Grid>
+                                <Image Source="/Assets/Icons/выход.png"
+                                       Style="{DynamicResource Image_Style}"  Width="30"/>
+                                <TextBlock Text="Выход"
+                                           Style="{DynamicResource Text_Style}" />
+                            </Grid>
+                        </Button>
+                    </StackPanel>
+
+                </Grid>
+            </Border>
+            <Grid Grid.Column="1" Margin="14,0,0,0"
+                  Background="#FFB400">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+                
+                <Border Grid.Row="1" CornerRadius="0 0 5 0" Background="Transparent">
+                    <Frame x:Name="frameContent" NavigationUIVisibility="Hidden" Margin="10,10,10,10"/>
+
+                </Border>
+                <Label  FontSize="22"
+                        VerticalContentAlignment="Center"     
+                        FontWeight="Bold"
+                        Content="{Binding ElementName=frameContent,
+                        Path=Content.Title}"
+                        HorizontalContentAlignment="Center"
+                        Foreground="Black"/>
+                <Border Background="Transparent"
+                        MouseDown="Border_MouseDown">
+                    <Image Source="/Assets/Icons/cross.png"
+                           Style="{StaticResource imgClose}"
+                           Grid.Column="1"
+                           Margin="10"
+                           VerticalAlignment="Top"
+                           HorizontalAlignment="Right"
+                           MouseLeftButtonDown="Image_MouseLeftButtonDown"/>
+                </Border>
+            </Grid>
+        </Grid>
+    </Border>
+</Window>
