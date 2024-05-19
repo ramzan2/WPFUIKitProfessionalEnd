@@ -70,7 +70,7 @@
                             <Grid>
                                 <Image Source="/Assets/Icons/добавление.png"
                                        Style="{DynamicResource Image_Style}"  Width="30"/>
-                                <TextBlock Text="Добавление запроса"
+                                <TextBlock Text="Отправить запрос"
                                            Style="{DynamicResource Text_Style}" />
                             </Grid>
                         </Button>

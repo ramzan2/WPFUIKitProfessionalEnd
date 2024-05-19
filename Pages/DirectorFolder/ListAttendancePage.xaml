@@ -20,6 +20,7 @@
         <Button Grid.Column="1"
                 Style="{StaticResource mainbutton}"
                 Content="Новая посещаемость"
+                 Background="#2994B2"
                 x:Name="NewAttendenczBtn"
                 Click="NewAttendenczBtn_Click"/>
         <TextBox x:Name="SearchTb" Background="Transparent"

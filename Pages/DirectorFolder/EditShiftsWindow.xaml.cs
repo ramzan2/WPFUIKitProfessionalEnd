@@ -30,6 +30,7 @@ namespace WPFUIKitProfessional.Pages.DirectorFolder
             shifts = DBEntities.GetContext().Shifts
                 .FirstOrDefault(u => u.IdShifts == existingShifts.IdShifts);
             DataContext = shifts;
+            this.shifts.IdShifts = shifts.IdShifts;
         }
 
         private void Border_MouseDown(object sender, MouseButtonEventArgs e)

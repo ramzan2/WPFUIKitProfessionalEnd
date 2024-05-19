@@ -21,7 +21,7 @@
                 <RowDefinition Height="70"/>
                 <RowDefinition Height="10"/>
             </Grid.RowDefinitions>
-            <TextBlock Text="Отметить посещаемость"
+            <TextBlock Text="Отправить запрос на отпуск"
                        Style="{StaticResource Text_Style}"/>
             <TextBlock Text="Конец отпуска"
                        Style="{StaticResource Text_Style}"               
@@ -39,10 +39,9 @@
                        FontSize="12"
                        Margin="45,0,0,0"
                        Grid.Row="1"/>
-            <ComboBox Width="140"
-                      Height="23"
+            <ComboBox
                       Grid.Row="1"
-                      Margin="112,22,46,22"
+                      Margin="112,24,34,20"
                       x:Name="StaffCb"
                       SelectedItem="{Binding Staff}"
                   DisplayMemberPath="FIOStaff" 
@@ -63,10 +62,9 @@
                        FontSize="12"
                        Margin="28,0,0,0"
                        Grid.Row="4"/>
-            <ComboBox Width="140"
-                      Height="23"
+            <ComboBox
                       Grid.Row="4"
-                      Margin="112,22,46,22"
+                      Margin="112,24,34,20"
                       x:Name="StatusCb"
                       SelectedItem="{Binding StatusRequests}"
                   DisplayMemberPath="NameStatusRequests" 

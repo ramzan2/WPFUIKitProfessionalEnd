@@ -29,7 +29,7 @@ namespace WPFUIKitProfessional.Pages.AdminFolder
             originaUser = DBEntities.GetContext().User
                 .FirstOrDefault(u => u.IdUser == existingUser.IdUser);
             DataContext = originaUser;
-
+            this.originaUser.IdUser = originaUser.IdUser;
             RoleCb.ItemsSource = DBEntities.GetContext()
          .Role.ToList();
             CompleteNameCb.ItemsSource = DBEntities.GetContext()

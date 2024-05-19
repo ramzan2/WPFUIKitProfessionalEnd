@@ -40,13 +40,14 @@ namespace WPFUIKitProfessional.Pages.ManagerFolder
         {
             DBEntities.GetContext().LeaveRequests.Add(new LeaveRequests()
             {
-                IdStaff = Convert.ToInt32(StatusCb.SelectedValue),
+                IdStaff = Convert.ToInt32(StaffCb.SelectedValue),
                 StartDate = Convert.ToDateTime(StartDt.SelectedDate),
                 EndDate = Convert.ToDateTime(EndDt.SelectedDate),
                 IdStatusRequests = Int32.Parse(StatusCb.SelectedValue.ToString())
             });
             DBEntities.GetContext().SaveChanges();
             MBClass.InfoMB("Запрос отправлен");
+            if (VariableClass.listRequestPage != null) VariableClass.listRequestPage.UpdateList();
             Close();
         }
 

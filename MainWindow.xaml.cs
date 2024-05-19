@@ -59,7 +59,7 @@ namespace WPFUIKitProfessional
 
         private void rdMessages_Click(object sender, RoutedEventArgs e)
         {
-            frameContent.Navigate(new ListRequestPage());
+            frameContent.Navigate(new Pages.ManagerFolder.ListRequestPage());
         }
 
         private void rdUsers_Click(object sender, RoutedEventArgs e)

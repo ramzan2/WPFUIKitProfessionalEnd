@@ -30,7 +30,7 @@ namespace WPFUIKitProfessional.Pages.ManagerFolder
             attendance = DBEntities.GetContext().Attendance
                 .FirstOrDefault(u => u.IdAttendance == existingAttendance.IdAttendance);
             DataContext = attendance;
-
+            this.attendance.IdAttendance = attendance.IdAttendance;
 
             ComboCb.ItemsSource = DBEntities.GetContext()
                   .StatusAttendance.ToList();

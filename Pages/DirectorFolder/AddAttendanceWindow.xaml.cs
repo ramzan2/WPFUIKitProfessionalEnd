@@ -43,7 +43,7 @@ namespace WPFUIKitProfessional.Pages.DirectorFolder
             });
             DBEntities.GetContext().SaveChanges();
             MBClass.InfoMB("Посещаемость добавленна");
-            if (VariableClass.listAttendance != null) VariableClass.listAttendance.UpdateList();
+            //if (VariableClass.listAttendance != null) VariableClass.listAttendance.UpdateList();
             Close();
         }
 

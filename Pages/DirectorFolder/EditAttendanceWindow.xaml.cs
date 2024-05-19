@@ -30,7 +30,7 @@ namespace WPFUIKitProfessional.Pages.DirectorFolder
             attendance = DBEntities.GetContext().Attendance
                 .FirstOrDefault(u => u.IdAttendance == existingAttendance.IdAttendance);
             DataContext = attendance;
-
+            this.attendance.IdAttendance = attendance.IdAttendance;
             StaffCb.ItemsSource = DBEntities.GetContext()
                  .Staff.ToList();
             StartDt.ItemsSource = DBEntities.GetContext()

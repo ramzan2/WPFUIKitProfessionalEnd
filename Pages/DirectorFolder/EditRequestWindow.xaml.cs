@@ -29,7 +29,7 @@ namespace WPFUIKitProfessional.Pages.DirectorFolder
             leaveRequests = DBEntities.GetContext().LeaveRequests
                 .FirstOrDefault(u => u.IdLeaveRequests == existingleaveRequests.IdLeaveRequests);
             DataContext = leaveRequests;
-
+            this.leaveRequests.IdLeaveRequests = leaveRequests.IdLeaveRequests;
 
             StaffCb.ItemsSource = DBEntities.GetContext()
                   .Staff.ToList();

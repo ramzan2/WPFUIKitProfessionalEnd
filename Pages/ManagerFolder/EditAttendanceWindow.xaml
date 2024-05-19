@@ -28,11 +28,11 @@
                        FontSize="12"
                        Margin="40,0,0,0"
                        Grid.Row="3"/>
-            <ComboBox Width="140"
+            <ComboBox 
                       Height="23"
                       Grid.Row="3"
                       x:Name="ComboCb"
-                      Margin="84,22,46,22"
+                      Margin="84,22,34,22"
                       SelectedItem="{Binding StatusAttendance}"
                   DisplayMemberPath="NameStatusAttendance" 
                   SelectedValuePath="IdStatusAttendance" />
@@ -41,10 +41,10 @@
                        FontSize="12"
                        Margin="19,0,0,0"
                        Grid.Row="1"/>
-            <ComboBox Width="140"
+            <ComboBox 
                       Height="23"
                       Grid.Row="1"
-                      Margin="84,22,46,22"
+                      Margin="84,22,34,22"
                       x:Name="StaffCb"
                       SelectedItem="{Binding Staff}"
                   DisplayMemberPath="FIOStaff" 
@@ -54,10 +54,10 @@
                        FontSize="12"
                        Margin="40,0,0,0"
                        Grid.Row="2"/>
-            <ComboBox Width="140"
+            <ComboBox 
                       Height="23"
                       Grid.Row="2"
-                      Margin="84,22,46,22"
+                      Margin="84,22,34,22"
                       x:Name="ShiftsCb"
                       SelectedItem="{Binding Shifts}"
                   DisplayMemberPath="ShiftsName" 

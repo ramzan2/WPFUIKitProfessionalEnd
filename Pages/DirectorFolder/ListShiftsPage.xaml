@@ -19,6 +19,7 @@
         </Grid.ColumnDefinitions>
         <Button x:Name="AddBtn"
                 Grid.Column="1"
+                 Background="#2994B2"
                 Style="{DynamicResource mainbutton}"
                 Content="Новая смена"
                 Click="AddBtn_Click"/>

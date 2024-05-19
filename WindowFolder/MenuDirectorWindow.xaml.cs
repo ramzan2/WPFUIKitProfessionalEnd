@@ -39,7 +39,7 @@ namespace WPFUIKitProfessional.WindowFolder
 
         private void ListRequest_Click(object sender, RoutedEventArgs e)
         {
-            frameContent.Navigate(new Pages.DirectorFolder.ListRequestPage());
+            frameContent.Navigate(new Pages.ManagerFolder.ListRequestPage());
         }
 
         private void Attendance_Click(object sender, RoutedEventArgs e)

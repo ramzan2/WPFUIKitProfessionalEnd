@@ -23,6 +23,7 @@
         <Button x:Name="AddStaffBtn"
                 Style="{StaticResource mainbutton}"
                 Grid.Column="2"
+                Background="#2994B2"
                 Content="Добавить"
                 Click="AddStaffBtn_Click"/>
         <TextBox x:Name="SearchTb" 
