@@ -459,6 +459,7 @@
   <ItemGroup>
     <Resource Include="Assets\Icons\Group 35.png" />
     <Resource Include="Assets\Icons\Group 33.png" />
+    <Resource Include="Assets\Icons\attendance.png" />
     <Content Include="DataFolder\DBModel.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>DBModel.edmx</DependentUpon>

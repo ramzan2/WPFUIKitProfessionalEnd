@@ -32,7 +32,7 @@
                     </Grid.RowDefinitions>
 
                     <!-- Logo -->
-                        <Image Source="/Assets/Icons/Group 35.png" Stretch="Fill" Height="120" Width="120" VerticalAlignment="Center" Margin="10 0 0 0"/>
+                    <Image Source="/Assets/Icons/Group 35.png" Stretch="Fill" Height="150" Width="150" VerticalAlignment="Top" Margin="47,0,47,0" Grid.RowSpan="2"/>
 
 
                     <StackPanel Grid.Row="1"
@@ -69,9 +69,9 @@
                         <Button x:Name="Attendance" Style="{DynamicResource BtnStyle}"  
                                      Click="Attendance_Click" >
                             <Grid>
-                                <Image Source="/Assets/Icons/добавление.png"
+                                <Image Source="/Assets/Icons/attendance.png"
                                        Style="{DynamicResource Image_Style}"  Width="30"/>
-                                <TextBlock Text="Отправить запрос"
+                                <TextBlock Text="Список посещаемости"
                                            Style="{DynamicResource Text_Style}" />
                             </Grid>
                         </Button>

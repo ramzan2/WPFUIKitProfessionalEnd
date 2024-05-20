@@ -47,11 +47,7 @@ namespace WPFUIKitProfessional.Pages.DirectorFolder
         {
                 staff = DBEntities.GetContext().Staff
                    .FirstOrDefault(u => u.IdStaff == staff.IdStaff);
-            if (selectedFileName == "фото есть")
-            {
-                staff.PhotoStaff = ImageClass.ConvertImageToByteArray(selectedFileName);
-            }
-            staff.FIOStaff = StaffTb.Text;
+                staff.FIOStaff = StaffTb.Text;
                 staff.PhoneNumber = PhoneTb.Text;
                 staff.IdPosition = Int32.Parse(
                     PositionCb.SelectedValue.ToString());
